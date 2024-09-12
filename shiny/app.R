@@ -7,6 +7,7 @@
 #    http://shiny.rstudio.com/
 #
 
+
 library(rio)
 library(here)
 library(shiny)
@@ -38,12 +39,12 @@ ui <- fluidPage(
   # 
   
   
-  checkboxGroupButtons(
-    inputId = "somevalue1",
-    label = "Make a choice: ",
-    choices = c("A", "B", "C")
-  ),
-  
+  # checkboxGroupButtons(
+  #   inputId = "somevalue1",
+  #   label = "Make a choice: ",
+  #   choices = c("A", "B", "C")
+  # ),
+  # 
   fluidRow (column(width = 6, leafletOutput("mapa", height = 500)),
            column(width = 6, leafletOutput("mapa_icon", height = 500)))
   #downloadButton("download_mapa", "Baixar Mapa")
